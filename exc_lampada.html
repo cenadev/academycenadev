@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cenadev Academy</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Cenadev Academy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Aulas e exercicios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="javascript.html">Aprenda Javascript</a>
+                
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Procurar exercicios" aria-label="Search">
+            <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container my-5">
+
+        <div class="row">
+            <div class="col-md-12 my-5">
+                   <h5>Alterando imagem usando JS</h5>
+                   <p>Aprenderemos a mudar uma imagem ao clicar em um botao!</p>
+                   <div class="bg-light">
+           
+
+                    <p class="px-2"> 
+                            Codigo JS: <br>
+                          <span class="text-primary"> var </span> btnliga <span class="text-danger"> = </span>  document. <span class="text-primary"> querySelector </span>( <span class="text-warning"> 'button.liga' </span>); <br>
+                        <span class="text-primary"> var </span> btnDesliga <span class="text-danger"> = </span> document.<span class="text-primary"> querySelector </span>( <span class="text-warning"> 'button.desliga' </span>);
+                            
+                            <br> <br>
+                            
+                            btnliga.addEventListener('click' , function(){ <br>
+                                document.getElementById('lampada').src = "./img/lamp_on.jpg";<br>
+                            }) <br>
+                            
+                            btnDesliga.addEventListener('click' , function(){ <br>
+                                document.getElementById('lampada').src = "./img/lamp_off.jpg"; <br>
+                            })     <br>
+                            </p>
+                   </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Exemplo funcionando:</p>
+                <img src="img/lamp_off.jpg" alt="" id="lampada"> 
+            </div>
+        
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 text-center my-5">
+                <button type="button" class="btn btn-success liga">Ligar Lampada</button>
+                <button type="button" class="btn btn-danger desliga">Desligar Lampada</button>
+        
+            </div>
+        </div>
+        
+        </div>
+        
+
+   
+    
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 bg-light">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3 mx-5">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Aprenda a programar com a Cenadev Academy</h5>
+          <p>Aqui você encontra dos mais diversos exercicios e tutoriais sobre linguagens de programação</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Todos os direitos reservados:
+      <a href="https://cenadev.com">cenadev.com</a>
+    </div>
+    
+
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
